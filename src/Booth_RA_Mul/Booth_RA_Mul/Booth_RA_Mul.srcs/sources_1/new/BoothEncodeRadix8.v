@@ -32,7 +32,7 @@ module BoothEncodeRadix8 #(WIDTH = 16)(
         A_2_n,
         B
     );
-    output [2:0] eB[(WIDTH - 1) << 1:0]; //sign mag code
+    output [2:0] eB[(WIDTH >> 1) - 1:0]; //sign mag code
     output [WIDTH-1:0] A, A_n;
     output [WIDTH-1:0] A_2, A_2_n;
     input [15:0] B;

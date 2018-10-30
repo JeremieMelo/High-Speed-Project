@@ -28,15 +28,15 @@ module PPGen # (WIDTH = 16)(
     eB, // 3-bit sign/magnitude Booth code [Sign, M1, M0] 
     A
     );
-output [WIDTH - 1:0] PP [(WIDTH << 1) - 1:0];
-output [(WIDTH << 1) - 1:0] SS;
-output [(WIDTH << 1) - 1:0] SC;
-output [(WIDTH << 1) - 1:0] S;
-input [2:0] eB [(WIDTH << 1) - 1:0];
+output [WIDTH - 1:0] PP [(WIDTH >> 1) - 1:0];
+output [(WIDTH >> 1) - 1:0] SS;
+output [(WIDTH >> 1) - 1:0] SC;
+output [(WIDTH >> 1) - 1:0] S;
+input [2:0] eB [(WIDTH >> 1) - 1:0];
 input [15:0] A;
 
-reg [WIDTH-1:0] PP [(WIDTH << 1) - 1:0];
-wire [2:0] eB [(WIDTH<<1)-1:0]; 
+reg [WIDTH - 1:0] PP [(WIDTH >> 1) - 1:0];
+wire [2:0] eB [(WIDTH >> 1) - 1:0]; 
 wire [WIDTH-1:0] zero;
 
 assign zero = 0;
@@ -44,7 +44,7 @@ assign SS = 16'b1010101010101011;
 generate
 genvar i;
 
-for(i = 0; i < (WIDTH << 1); i = i + 1) begin : BLOCK0
+for(i = 0; i < (WIDTH >> 1); i = i + 1) begin : BLOCK0
  always @(eB) begin
    if(eB[i] == 3'b000 || eB[i] == 3'b100) // 0
       PP[i] <= zero;
