@@ -29,11 +29,11 @@ module PPGen # (WIDTH = 16)(
     A
     );
 output [WIDTH - 1:0] PP [(WIDTH >> 1) - 1:0];
-output [(WIDTH >> 1) - 1:0] SS;
+output [WIDTH - 1:0] SS;
 output [(WIDTH >> 1) - 1:0] SC;
 output [(WIDTH >> 1) - 1:0] S;
 input [2:0] eB [(WIDTH >> 1) - 1:0];
-input [15:0] A;
+input [WIDTH - 1:0] A;
 
 reg [WIDTH - 1:0] PP [(WIDTH >> 1) - 1:0];
 wire [2:0] eB [(WIDTH >> 1) - 1:0]; 
