@@ -1,0 +1,267 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Nov  7 22:11:34 2018
+# Process ID: 15940
+# Current directory: D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.runs/synth_1
+# Command line: vivado.exe -log RA_Mul.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RA_Mul.tcl
+# Log file: D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.runs/synth_1/RA_Mul.vds
+# Journal file: D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RA_Mul.tcl -notrace
+Command: synth_design -top RA_Mul -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18464 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 426.031 ; gain = 96.672
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RA_Mul' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:3420]
+INFO: [Synth 8-6157] synthesizing module 'BoothEncoder_radix4' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'BoothEncoder_radix4' (1#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PPGen' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:251]
+INFO: [Synth 8-6155] done synthesizing module 'PPGen' (2#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:251]
+INFO: [Synth 8-6157] synthesizing module 'Reduction_1' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:704]
+INFO: [Synth 8-6157] synthesizing module 'HA' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:675]
+INFO: [Synth 8-6155] done synthesizing module 'HA' (3#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:675]
+INFO: [Synth 8-6157] synthesizing module 'FA' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:684]
+INFO: [Synth 8-6155] done synthesizing module 'FA' (4#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:684]
+INFO: [Synth 8-6155] done synthesizing module 'Reduction_1' (5#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:704]
+INFO: [Synth 8-6157] synthesizing module 'Reduction_2' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:1613]
+INFO: [Synth 8-6155] done synthesizing module 'Reduction_2' (6#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:1613]
+INFO: [Synth 8-6157] synthesizing module 'Reduction_3' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:2378]
+INFO: [Synth 8-6155] done synthesizing module 'Reduction_3' (7#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:2378]
+INFO: [Synth 8-6157] synthesizing module 'Reduction_4' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:2899]
+INFO: [Synth 8-6155] done synthesizing module 'Reduction_4' (8#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:2899]
+INFO: [Synth 8-6157] synthesizing module 'TailAdder' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:3409]
+INFO: [Synth 8-6155] done synthesizing module 'TailAdder' (9#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:3409]
+INFO: [Synth 8-6155] done synthesizing module 'RA_Mul' (10#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v:3420]
+WARNING: [Synth 8-3331] design RA_Mul has unconnected port clock
+WARNING: [Synth 8-3331] design RA_Mul has unconnected port reset
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 481.613 ; gain = 152.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 481.613 ; gain = 152.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 481.613 ; gain = 152.254
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 481.613 ; gain = 152.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 28    
+	   3 Input      1 Bit         XORs := 103   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module BoothEncoder_radix4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+Module HA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module FA 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module TailAdder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design RA_Mul has unconnected port clock
+WARNING: [Synth 8-3331] design RA_Mul has unconnected port reset
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 717.488 ; gain = 388.129
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 717.488 ; gain = 388.129
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 717.488 ; gain = 388.129
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 717.488 ; gain = 388.129
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 717.488 ; gain = 388.129
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 717.488 ; gain = 388.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 717.488 ; gain = 388.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 717.488 ; gain = 388.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 717.488 ; gain = 388.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     8|
+|2     |LUT2   |     8|
+|3     |LUT3   |    66|
+|4     |LUT4   |    28|
+|5     |LUT5   |   164|
+|6     |LUT6   |    94|
+|7     |IBUF   |    32|
+|8     |OBUF   |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+----------+------+
+|      |Instance    |Module    |Cells |
++------+------------+----------+------+
+|1     |top         |          |   432|
+|2     |  TailAdder |TailAdder |   365|
++------+------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 717.488 ; gain = 388.129
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 717.488 ; gain = 388.129
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 717.488 ; gain = 388.129
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 729.660 ; gain = 412.098
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.runs/synth_1/RA_Mul.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RA_Mul_utilization_synth.rpt -pb RA_Mul_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 729.660 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  7 22:12:05 2018...
