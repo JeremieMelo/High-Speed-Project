@@ -44,7 +44,7 @@ end
 
 initial #4000 $finish;
 
-RA_Mul ra (
+RA_Mul_ppl ra_ppl (
     .clock(clk),
     .reset(rst),
 	.io_A(A),
