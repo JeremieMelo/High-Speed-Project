@@ -1,0 +1,10 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sim_1/new/Booth_RA_Mul_tb.v,1541972012,verilog,,,,Booth_RA_Mul_tb,,,,,,,,
+D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/CLA16bit.v,1541830848,verilog,,D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/CLA28bit.v,,CLA16bit,,,,,,,,
+D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/CLA28bit.v,1541830848,verilog,,D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/CLA4bit.v,,CLA28bit,,,,,,,,
+D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/CLA4bit.v,1541830848,verilog,,D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v,,CLA4bit,,,,,,,,
+D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sources_1/new/RA_Mul.v,1541970861,verilog,,D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul/Booth_RA_Mul/Booth_RA_Mul.srcs/sim_1/new/Booth_RA_Mul_tb.v,,BoothEncoder_radix4;FA;HA;PPGen;RA_Mul;Reduction_1;Reduction_2;Reduction_3;Reduction_4;TailAdder,,,,,,,,

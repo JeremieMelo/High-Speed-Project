@@ -605,7 +605,7 @@ object Reduction_4 {
 
 class TailAdder(WIDTH: Int) extends Module {
   val io = IO(new Bundle {
-    val S = Output(UInt((WIDTH+1).W))
+    val S = Output(UInt((WIDTH).W))
     val B = Input(UInt(WIDTH.W))
     val A = Input(UInt(WIDTH.W))
   })
@@ -657,6 +657,112 @@ class RA_Mul (WIDTH: Int, TailAdderWIDTH: Int) extends Module {
 
 }
 
+class PPLRegs1 (WIDTH: Int) extends  Module {
+  val io = IO(new Bundle {
+    val PP_i = Input(Vec(WIDTH/2, UInt(WIDTH.W)))
+    val PP_o = Output(Vec(WIDTH/2, UInt(WIDTH.W)))
+    val SS_i = Input(UInt(WIDTH.W))
+    val SS_o = Output(UInt(WIDTH.W))
+    val SC_i = Input(UInt((WIDTH/2).W))
+    val SC_o = Output(UInt((WIDTH/2).W))
+    val S_i = Input(UInt((WIDTH/2).W))
+    val S_o = Output(UInt((WIDTH/2).W))
+  })
+  io.PP_o := RegNext(io.PP_i, VecInit(Seq.fill(WIDTH/2){0.U}))
+  io.SS_o := RegNext(io.SS_i, 0.U)
+  io.SC_o := RegNext(io.SC_i, 0.U)
+  io.S_o := RegNext(io.S_i, 0.U)
+}
+
+object PPLRegs1 {
+  def apply(PP_i : Seq[UInt], SS_i: UInt, SC_i: UInt, S_i: UInt,PP_o : Seq[UInt], SS_o: UInt, SC_o: UInt, S_o: UInt, WIDTH: Int) = {
+    val tmp = Module(new PPLRegs1(WIDTH))
+    tmp.io.PP_i <> PP_i
+    for ((a, b) <- tmp.io.PP_o zip PP_o){
+      b := a
+    }
+    tmp.io.SS_i := SS_i
+    SS_o := tmp.io.SS_o
+    tmp.io.SC_i := SC_i
+    SC_o := tmp.io.SC_o
+    tmp.io.S_i := S_i
+    S_o := tmp.io.S_o
+  }
+}
+
+class PPLRegs2 (WIDTH: Int, HEIGHT_i: Int, HEIGHT_o:Int) extends  Module {
+  val io = IO(new Bundle {
+    val matrix_o = Output(Vec(HEIGHT_o, Vec(WIDTH * 2, Bool())))
+    val matrix_i = Input(Vec(HEIGHT_i, Vec(WIDTH * 2, Bool())))
+  })
+  for((a, b) <- io.matrix_i zip io.matrix_o)
+    b := RegNext(a, VecInit(Seq.fill(WIDTH * 2){false.B}))
+}
+
+object PPLRegs2 {
+  def apply(matrix_i:Seq[Seq[Bool]], matrix_o:Seq[Seq[Bool]], WIDTH: Int, HEIGHT_i: Int, HEIGHT_o:Int) = {
+    val tmp = Module(new PPLRegs2(WIDTH, HEIGHT_i, HEIGHT_o))
+    for((a, b) <- matrix_o zip tmp.io.matrix_o)
+      b <> a
+    for((a, b) <- matrix_i zip tmp.io.matrix_i)
+      b <> a
+  }
+}
+
+class PPLRegs3 (WIDTH: Int) extends  Module {
+  val io = IO(new Bundle {
+    val S_o = Output(UInt((WIDTH).W))
+    val S_i = Input(UInt((WIDTH).W))
+  })
+  io.S_o := RegNext(io.S_i, 0.U)
+}
+
+object PPLRegs3 {
+  def apply(S_i: UInt, S_o: UInt, WIDTH: Int) = {
+    val tmp = Module(new PPLRegs3(WIDTH))
+    tmp.io.S_i := S_i
+    S_o := tmp.io.S_o
+  }
+}
+
+class RA_Mul_ppl (WIDTH: Int, TailAdderWIDTH: Int) extends Module {
+  val io = IO(new Bundle {
+    val P = Output(UInt((WIDTH*2).W))
+    val B = Input(UInt(WIDTH.W))
+    val A = Input(UInt(WIDTH.W))
+  })
+  val PP = Wire(Vec(WIDTH/2, UInt(WIDTH.W)))
+  val SS = Wire(UInt(WIDTH.W))
+  val SC = Wire(UInt((WIDTH/2).W))
+  val S = Wire(UInt((WIDTH/2).W))
+
+  val PP_o = Wire(Vec(WIDTH/2, UInt(WIDTH.W)))
+  val SS_o = Wire(UInt(WIDTH.W))
+  val SC_o = Wire(UInt((WIDTH/2).W))
+  val S_o = Wire(UInt((WIDTH/2).W))
+
+  val eB = Wire(Vec(WIDTH/2, UInt(3.W)))
+  val matrix_o1 = Wire(Vec(6, Vec(WIDTH * 2, Bool())))
+  val matrix_o2 = Wire(Vec(4, Vec(WIDTH * 2, Bool())))
+  val matrix_o3 = Wire(Vec(3, Vec(WIDTH * 2, Bool())))
+  val matrix_o4 = Wire(Vec(2, Vec(WIDTH * 2, Bool())))
+  val matrix_o4_o = Wire(Vec(2, Vec(WIDTH * 2, Bool())))
+  val P = Wire(UInt((WIDTH*2).W))
+
+  BoothEncoder_radix4(io.B, eB, WIDTH)
+  PPGen(io.A, eB, PP, SS, SC, S, WIDTH)
+  PPLRegs1(PP, SS, SC, S, PP_o, SS_o, SC_o, S_o, WIDTH)
+
+  Reduction_1(PP_o, SS_o, SC_o, S_o, matrix_o1, WIDTH, 6)
+  Reduction_2(matrix_o1, matrix_o2, WIDTH, 6, 4)
+  Reduction_3(matrix_o2, matrix_o3, WIDTH, 4, 3)
+  Reduction_4(matrix_o3, matrix_o4, WIDTH, 3, 2)
+  PPLRegs2(matrix_o4, matrix_o4_o, WIDTH, 2, 2)
+
+  TailAdder(matrix_o4_o(0).asUInt, matrix_o4_o(1).asUInt, P, TailAdderWIDTH)
+  PPLRegs3(P, io.P, TailAdderWIDTH)
+}
+
 
 object BoothEncoderDriver extends App {
   chisel3.Driver.execute(args, () => new BoothEncoder_radix4(16))
@@ -668,6 +774,10 @@ object PPGenDriver extends App {
 
 object RA_MulDriver extends App {
   chisel3.Driver.execute(args, () => new RA_Mul(16, 32))
+}
+
+object RA_Mul_pplDriver extends App {
+  chisel3.Driver.execute(args, () => new RA_Mul_ppl(16, 32))
 }
 
 object Reduction1Driver extends App {

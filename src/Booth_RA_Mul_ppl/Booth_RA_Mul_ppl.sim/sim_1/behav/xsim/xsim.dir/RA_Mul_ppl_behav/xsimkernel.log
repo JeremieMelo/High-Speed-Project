@@ -1,0 +1,4 @@
+Running: xsim.dir/RA_Mul_ppl_behav/xsimk.exe -simmode gui -wdb RA_Mul_ppl_behav.wdb -simrunnum 0 -socket 57854
+Design successfully loaded
+Design Loading Memory Usage: 6100 KB (Peak: 6100 KB)
+Design Loading CPU Usage: 15 ms

@@ -3407,15 +3407,23 @@ module Reduction_4( // @[:@3679.2]
   assign FA_12_io_cin = io_matrix_i_2_28; // @[RA_Mul.scala 46:16:@3872.4]
 endmodule
 module TailAdder( // @[:@3882.2]
-  output [32:0] io_S, // @[:@3885.4]
+  output [31:0] io_S, // @[:@3885.4]
   input  [31:0] io_B, // @[:@3885.4]
   input  [31:0] io_A // @[:@3885.4]
 );
-  wire [32:0] _T_11; // @[RA_Mul.scala 612:16:@3887.4]
-  wire [31:0] _T_12; // @[RA_Mul.scala 612:16:@3888.4]
-  assign _T_11 = io_A + io_B; // @[RA_Mul.scala 612:16:@3887.4]
-  assign _T_12 = _T_11[31:0]; // @[RA_Mul.scala 612:16:@3888.4]
-  assign io_S = {{1'd0}, _T_12}; // @[RA_Mul.scala 612:8:@3889.4]
+ // wire [32:0] _T_11; // @[RA_Mul.scala 612:16:@3887.4]
+ // wire [31:0] _T_12; // @[RA_Mul.scala 612:16:@3888.4]
+  //assign _T_11 = io_A + io_B; // @[RA_Mul.scala 612:16:@3887.4]
+  //assign _T_12 = _T_11[31:0]; // @[RA_Mul.scala 612:16:@3888.4]
+  //assign io_S = {{1'd0}, _T_12}; // @[RA_Mul.scala 612:8:@3889.4]
+  wire [27:0] high_sum;
+  CLA28bit cla28(
+    .S(high_sum),
+    .A(io_A[31:4]),
+    .B(io_B[31:4])
+    );
+   assign io_S = {high_sum, io_A[3:0]};
+   
 endmodule
 module RA_Mul( // @[:@3891.2]
   input         clock, // @[:@3892.4]
