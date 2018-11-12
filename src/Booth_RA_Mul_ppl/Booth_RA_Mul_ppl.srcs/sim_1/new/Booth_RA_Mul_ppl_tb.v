@@ -30,13 +30,13 @@ reg [15:0] A;
 reg [15:0] B;
 wire[31:0] P;
 
-always #5 clk = !clk;
+always #20 clk = !clk;
 
 initial 
 begin
 	clk = 0;
 	cnt = 32750;
-	i = 0;
+	i = 1;
 	rst = 1'b1;
     #20 rst = 1'b0;
 end

@@ -2,3 +2,6 @@ Running: xsim.dir/RA_Mul_ppl_behav/xsimk.exe -simmode gui -wdb RA_Mul_ppl_behav.
 Design successfully loaded
 Design Loading Memory Usage: 6100 KB (Peak: 6100 KB)
 Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 7456 KB (Peak: 7456 KB)
+Simulation CPU Usage: 93 ms

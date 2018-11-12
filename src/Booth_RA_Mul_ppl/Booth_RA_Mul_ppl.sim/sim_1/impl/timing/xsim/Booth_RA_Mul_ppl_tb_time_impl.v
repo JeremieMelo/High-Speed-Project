@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-// Date        : Sun Nov 11 21:46:21 2018
+// Date        : Sun Nov 11 23:08:54 2018
 // Host        : DESKTOP-FQ88ABI running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file {D:/Jake_Gu/UT
 //               Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.sim/sim_1/impl/timing/xsim/Booth_RA_Mul_ppl_tb_time_impl.v}
