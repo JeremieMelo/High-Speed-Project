@@ -11,7 +11,7 @@ output      G03
 genvar i;
 generate
 for (i = 0; i < 4; i = i + 1) begin: PG_gen
-	assign P[i] = A[i] | B[i];
+	assign P[i] = A[i] ^ B[i];
 	assign G[i] = A[i] & B[i];
 end
 endgenerate

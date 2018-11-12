@@ -15,7 +15,7 @@ always #5 clk = !clk;
 initial 
 begin
 	clk = 0;
-	cnt = 65535;
+	cnt = 28'hFFFFFFF;
 	i = 0;
 end
 
