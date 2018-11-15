@@ -1,0 +1,7 @@
+Running: xsim.dir/Booth_RA_Mul_ppl_csla_tb_time_impl/xsimk.exe -simmode gui -wdb Booth_RA_Mul_ppl_csla_tb_time_impl.wdb -simrunnum 0 -socket 52458
+Design successfully loaded
+Design Loading Memory Usage: 14132 KB (Peak: 14132 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 17364 KB (Peak: 17364 KB)
+Simulation CPU Usage: 78 ms

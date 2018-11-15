@@ -695,8 +695,15 @@ class PPLRegs2 (WIDTH: Int, HEIGHT_i: Int, HEIGHT_o:Int) extends  Module {
     val matrix_o = Output(Vec(HEIGHT_o, Vec(WIDTH * 2, Bool())))
     val matrix_i = Input(Vec(HEIGHT_i, Vec(WIDTH * 2, Bool())))
   })
-  for((a, b) <- io.matrix_i zip io.matrix_o)
-    b := RegNext(a, VecInit(Seq.fill(WIDTH * 2){false.B}))
+  //for((a, b) <- io.matrix_i zip io.matrix_o)
+   // b := RegNext(a, VecInit(Seq.fill(WIDTH * 2){false.B}))
+  val tmp = Wire(Vec(HEIGHT_o, UInt((WIDTH*2).W)))
+  for((a, b) <- io.matrix_i zip tmp){
+    b := (RegNext(a.asUInt, 0.U))
+  }
+  for((a,b) <- io.matrix_o zip tmp){
+    a := b.toBools
+  }
 }
 
 object PPLRegs2 {

@@ -1,0 +1,28 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl_csla/Booth_RA_Mul_ppl_csla.srcs/sources_1/new/CSLA28.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FA
+INFO: [VRFC 10-311] analyzing module RCA
+INFO: [VRFC 10-311] analyzing module CSLABlock
+INFO: [VRFC 10-311] analyzing module RCA_3
+INFO: [VRFC 10-311] analyzing module CSLABlock_1
+INFO: [VRFC 10-311] analyzing module RCA_5
+INFO: [VRFC 10-311] analyzing module CSLABlock_2
+INFO: [VRFC 10-311] analyzing module CSLA28
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl_csla/Booth_RA_Mul_ppl_csla.srcs/sources_1/new/RA_Mul_ppl_csla.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BoothEncoder_radix4
+INFO: [VRFC 10-311] analyzing module PPGen
+INFO: [VRFC 10-311] analyzing module PPLRegs1
+INFO: [VRFC 10-311] analyzing module HA
+INFO: [VRFC 10-311] analyzing module FA
+WARNING: [VRFC 10-2845] overwriting previous definition of module FA [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl_csla/Booth_RA_Mul_ppl_csla.srcs/sources_1/new/RA_Mul_ppl_csla.v:896]
+INFO: [VRFC 10-311] analyzing module Reduction_1
+INFO: [VRFC 10-311] analyzing module Reduction_2
+INFO: [VRFC 10-311] analyzing module Reduction_3
+INFO: [VRFC 10-311] analyzing module Reduction_4
+INFO: [VRFC 10-311] analyzing module PPLRegs2
+INFO: [VRFC 10-311] analyzing module TailAdder
+INFO: [VRFC 10-311] analyzing module PPLRegs3
+INFO: [VRFC 10-311] analyzing module RA_Mul_ppl_csla
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl_csla/Booth_RA_Mul_ppl_csla.srcs/sim_1/new/Booth_RA_Mul_ppl_csla_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Booth_RA_Mul_ppl_csla_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl_csla/Booth_RA_Mul_ppl_csla.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

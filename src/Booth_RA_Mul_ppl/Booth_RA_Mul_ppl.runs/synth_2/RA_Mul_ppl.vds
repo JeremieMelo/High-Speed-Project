@@ -1,0 +1,310 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Nov 12 15:56:59 2018
+# Process ID: 576
+# Current directory: D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.runs/synth_2
+# Command line: vivado.exe -log RA_Mul_ppl.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RA_Mul_ppl.tcl
+# Log file: D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.runs/synth_2/RA_Mul_ppl.vds
+# Journal file: D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source RA_Mul_ppl.tcl -notrace
+Command: synth_design -top RA_Mul_ppl -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9844 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 427.020 ; gain = 97.426
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RA_Mul_ppl' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:4549]
+INFO: [Synth 8-6157] synthesizing module 'BoothEncoder_radix4' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'BoothEncoder_radix4' (1#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PPGen' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:251]
+INFO: [Synth 8-6155] done synthesizing module 'PPGen' (2#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:251]
+INFO: [Synth 8-6157] synthesizing module 'PPLRegs1' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:675]
+INFO: [Synth 8-6155] done synthesizing module 'PPLRegs1' (3#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:675]
+INFO: [Synth 8-6157] synthesizing module 'Reduction_1' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:894]
+INFO: [Synth 8-6157] synthesizing module 'HA' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:865]
+INFO: [Synth 8-6155] done synthesizing module 'HA' (4#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:865]
+INFO: [Synth 8-6157] synthesizing module 'FA' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:874]
+INFO: [Synth 8-6155] done synthesizing module 'FA' (5#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:874]
+INFO: [Synth 8-6155] done synthesizing module 'Reduction_1' (6#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:894]
+INFO: [Synth 8-6157] synthesizing module 'Reduction_2' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:1822]
+INFO: [Synth 8-6155] done synthesizing module 'Reduction_2' (7#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:1822]
+INFO: [Synth 8-6157] synthesizing module 'Reduction_3' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:2604]
+INFO: [Synth 8-6155] done synthesizing module 'Reduction_3' (8#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:2604]
+INFO: [Synth 8-6157] synthesizing module 'Reduction_4' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:3133]
+INFO: [Synth 8-6155] done synthesizing module 'Reduction_4' (9#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:3133]
+INFO: [Synth 8-6157] synthesizing module 'PPLRegs2' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:3647]
+INFO: [Synth 8-6155] done synthesizing module 'PPLRegs2' (10#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:3647]
+INFO: [Synth 8-6157] synthesizing module 'TailAdder' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:4482]
+INFO: [Synth 8-6157] synthesizing module 'CLA28bit' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/CLA28bit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CLA4bit' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/CLA4bit.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'CLA4bit' (11#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/CLA4bit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'CLA16bit' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/CLA16bit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CLA16bit' (12#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/CLA16bit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CLA28bit' (13#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/CLA28bit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'TailAdder' (14#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:4482]
+INFO: [Synth 8-6157] synthesizing module 'PPLRegs3' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:4498]
+INFO: [Synth 8-6155] done synthesizing module 'PPLRegs3' (15#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:4498]
+INFO: [Synth 8-6155] done synthesizing module 'RA_Mul_ppl' (16#1) [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:4549]
+WARNING: [Synth 8-3331] design TailAdder has unconnected port io_B[3]
+WARNING: [Synth 8-3331] design TailAdder has unconnected port io_B[2]
+WARNING: [Synth 8-3331] design TailAdder has unconnected port io_B[1]
+WARNING: [Synth 8-3331] design TailAdder has unconnected port io_B[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 482.879 ; gain = 153.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 482.879 ; gain = 153.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 482.879 ; gain = 153.285
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 493.043 ; gain = 163.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 28    
+	   3 Input      1 Bit         XORs := 103   
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 9     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 57    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module BoothEncoder_radix4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+Module PPLRegs1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 9     
+	                8 Bit    Registers := 2     
+Module HA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module FA 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module PPLRegs2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 57    
+Module PPLRegs3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[15]' (FDR) to 'PPLRegs1/_T_142_reg[0]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[14]' (FDR) to 'PPLRegs1/_T_142_reg[12]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[13]' (FDR) to 'PPLRegs1/_T_142_reg[0]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[12]' (FDR) to 'PPLRegs1/_T_142_reg[10]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[8]' (FDR) to 'PPLRegs1/_T_142_reg[10]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[11]' (FDR) to 'PPLRegs1/_T_142_reg[0]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[10]' (FDR) to 'PPLRegs1/_T_142_reg[6]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[9]' (FDR) to 'PPLRegs1/_T_142_reg[0]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[4]' (FDR) to 'PPLRegs1/_T_142_reg[6]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[7]' (FDR) to 'PPLRegs1/_T_142_reg[0]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[6]' (FDR) to 'PPLRegs1/_T_142_reg[2]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[5]' (FDR) to 'PPLRegs1/_T_142_reg[0]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[3]' (FDR) to 'PPLRegs1/_T_142_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PPLRegs1/_T_142_reg[2] )
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[1]' (FDR) to 'PPLRegs1/_T_142_reg[0]'
+WARNING: [Synth 8-3332] Sequential element (PPLRegs1/_T_142_reg[2]) is unused and will be removed from module RA_Mul_ppl.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 663.691 ; gain = 334.098
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 663.691 ; gain = 334.098
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 663.691 ; gain = 334.098
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 663.691 ; gain = 334.098
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 663.691 ; gain = 334.098
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 663.691 ; gain = 334.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 663.691 ; gain = 334.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 663.691 ; gain = 334.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 663.691 ; gain = 334.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |    11|
+|3     |LUT3 |    72|
+|4     |LUT4 |    36|
+|5     |LUT5 |   190|
+|6     |LUT6 |    73|
+|7     |FDRE |   234|
+|8     |IBUF |    34|
+|9     |OBUF |    64|
++------+-----+------+
+
+Report Instance Areas: 
++------+-----------+---------+------+
+|      |Instance   |Module   |Cells |
++------+-----------+---------+------+
+|1     |top        |         |   715|
+|2     |  PPLRegs1 |PPLRegs1 |   458|
+|3     |  PPLRegs2 |PPLRegs2 |   126|
+|4     |  PPLRegs3 |PPLRegs3 |    32|
++------+-----------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 663.691 ; gain = 334.098
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 663.691 ; gain = 334.098
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 663.691 ; gain = 334.098
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 728.203 ; gain = 410.355
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.runs/synth_2/RA_Mul_ppl.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RA_Mul_ppl_utilization_synth.rpt -pb RA_Mul_ppl_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 728.203 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 12 15:58:08 2018...

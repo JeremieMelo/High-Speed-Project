@@ -1,0 +1,8 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl_csla/Booth_RA_Mul_ppl_csla.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl_csla/Booth_RA_Mul_ppl_csla.srcs/sim_1/new/Booth_RA_Mul_ppl_csla_tb.v,1542084375,verilog,,,,Booth_RA_Mul_ppl_csla_tb,,,,,,,,
+D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl_csla/Booth_RA_Mul_ppl_csla.srcs/sources_1/new/CSLA28.v,1542082779,verilog,,D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl_csla/Booth_RA_Mul_ppl_csla.srcs/sources_1/new/RA_Mul_ppl_csla.v,,CSLA28;CSLABlock;CSLABlock_1;CSLABlock_2;RCA;RCA_3;RCA_5,,,,,,,,
+D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl_csla/Booth_RA_Mul_ppl_csla.srcs/sources_1/new/RA_Mul_ppl_csla.v,1542084058,verilog,,D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl_csla/Booth_RA_Mul_ppl_csla.srcs/sim_1/new/Booth_RA_Mul_ppl_csla_tb.v,,BoothEncoder_radix4;FA;HA;PPGen;PPLRegs1;PPLRegs2;PPLRegs3;RA_Mul_ppl_csla;Reduction_1;Reduction_2;Reduction_3;Reduction_4;TailAdder,,,,,,,,

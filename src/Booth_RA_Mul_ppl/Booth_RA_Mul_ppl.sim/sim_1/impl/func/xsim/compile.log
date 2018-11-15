@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.sim/sim_1/impl/func/xsim/Booth_RA_Mul_ppl_tb_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PPLRegs1
+INFO: [VRFC 10-311] analyzing module PPLRegs2
+INFO: [VRFC 10-311] analyzing module PPLRegs3
+INFO: [VRFC 10-311] analyzing module RA_Mul_ppl
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sim_1/new/Booth_RA_Mul_ppl_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Booth_RA_Mul_ppl_tb

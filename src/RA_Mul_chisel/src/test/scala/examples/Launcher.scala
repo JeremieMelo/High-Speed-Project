@@ -114,8 +114,13 @@ object Launcher {
       "RA_Mul_ppl" -> { (manager: TesterOptionsManager) =>
       Driver.execute(() => new RA_Mul_ppl(16,32), manager) {
         (c) => new RA_Mul_pplTests(c)
+        }
+      },
+    "CSLA28" -> { (manager: TesterOptionsManager) =>
+      Driver.execute(() => new CSLA28(28), manager) {
+        (c) => new CSLA28Tests(c)
       }
-  }
+    }
   )
   def main(args: Array[String]): Unit = {
     TutorialRunner("examples", examples, args)

@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 28024 
+INFO: Helper process launched with PID 12032 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 426.523 ; gain = 97.203
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 426.469 ; gain = 97.809
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'RA_Mul_ppl' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:4549]
 INFO: [Synth 8-6157] synthesizing module 'BoothEncoder_radix4' [D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.srcs/sources_1/new/RA_Mul_ppl.v:1]
@@ -55,21 +55,21 @@ WARNING: [Synth 8-3331] design TailAdder has unconnected port io_B[2]
 WARNING: [Synth 8-3331] design TailAdder has unconnected port io_B[1]
 WARNING: [Synth 8-3331] design TailAdder has unconnected port io_B[0]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 484.039 ; gain = 154.719
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 483.418 ; gain = 154.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 484.039 ; gain = 154.719
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 483.418 ; gain = 154.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 484.039 ; gain = 154.719
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 483.418 ; gain = 154.758
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 493.973 ; gain = 164.652
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 494.480 ; gain = 165.820
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -139,24 +139,24 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[15]' (FDR) to 'PPLRegs1/_T_142_reg[13]'
-INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[14]' (FDR) to 'PPLRegs1/_T_142_reg[2]'
-INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[13]' (FDR) to 'PPLRegs1/_T_142_reg[11]'
-INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[12]' (FDR) to 'PPLRegs1/_T_142_reg[2]'
-INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[8]' (FDR) to 'PPLRegs1/_T_142_reg[2]'
-INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[11]' (FDR) to 'PPLRegs1/_T_142_reg[9]'
-INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[10]' (FDR) to 'PPLRegs1/_T_142_reg[2]'
-INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[9]' (FDR) to 'PPLRegs1/_T_142_reg[7]'
-INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[4]' (FDR) to 'PPLRegs1/_T_142_reg[2]'
-INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[7]' (FDR) to 'PPLRegs1/_T_142_reg[5]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[15]' (FDR) to 'PPLRegs1/_T_142_reg[0]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[14]' (FDR) to 'PPLRegs1/_T_142_reg[12]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[13]' (FDR) to 'PPLRegs1/_T_142_reg[0]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[12]' (FDR) to 'PPLRegs1/_T_142_reg[10]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[8]' (FDR) to 'PPLRegs1/_T_142_reg[10]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[11]' (FDR) to 'PPLRegs1/_T_142_reg[0]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[10]' (FDR) to 'PPLRegs1/_T_142_reg[6]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[9]' (FDR) to 'PPLRegs1/_T_142_reg[0]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[4]' (FDR) to 'PPLRegs1/_T_142_reg[6]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[7]' (FDR) to 'PPLRegs1/_T_142_reg[0]'
 INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[6]' (FDR) to 'PPLRegs1/_T_142_reg[2]'
-INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[5]' (FDR) to 'PPLRegs1/_T_142_reg[3]'
-INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[3]' (FDR) to 'PPLRegs1/_T_142_reg[1]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[5]' (FDR) to 'PPLRegs1/_T_142_reg[0]'
+INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[3]' (FDR) to 'PPLRegs1/_T_142_reg[0]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PPLRegs1/_T_142_reg[2] )
 INFO: [Synth 8-3886] merging instance 'PPLRegs1/_T_142_reg[1]' (FDR) to 'PPLRegs1/_T_142_reg[0]'
 WARNING: [Synth 8-3332] Sequential element (PPLRegs1/_T_142_reg[2]) is unused and will be removed from module RA_Mul_ppl.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 685.160 ; gain = 355.840
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 686.309 ; gain = 357.648
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -169,7 +169,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 685.160 ; gain = 355.840
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 686.309 ; gain = 357.648
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -181,7 +181,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 685.160 ; gain = 355.840
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 686.309 ; gain = 357.648
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -205,7 +205,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 685.160 ; gain = 355.840
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 686.309 ; gain = 357.648
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -218,7 +218,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 685.160 ; gain = 355.840
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 686.309 ; gain = 357.648
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -230,25 +230,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 685.160 ; gain = 355.840
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 686.309 ; gain = 357.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 685.160 ; gain = 355.840
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 686.309 ; gain = 357.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 685.160 ; gain = 355.840
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 686.309 ; gain = 357.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 685.160 ; gain = 355.840
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 686.309 ; gain = 357.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -272,24 +272,24 @@ Report Cell Usage:
 |6     |LUT6 |    73|
 |7     |FDRE |   234|
 |8     |IBUF |    34|
-|9     |OBUF |    32|
+|9     |OBUF |    80|
 +------+-----+------+
 
 Report Instance Areas: 
 +------+-----------+---------+------+
 |      |Instance   |Module   |Cells |
 +------+-----------+---------+------+
-|1     |top        |         |   683|
+|1     |top        |         |   731|
 |2     |  PPLRegs1 |PPLRegs1 |   458|
 |3     |  PPLRegs2 |PPLRegs2 |   126|
 |4     |  PPLRegs3 |PPLRegs3 |    32|
 +------+-----------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 685.160 ; gain = 355.840
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 686.309 ; gain = 357.648
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 685.160 ; gain = 355.840
-Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 685.160 ; gain = 355.840
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 686.309 ; gain = 357.648
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 686.309 ; gain = 357.648
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -301,9 +301,9 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 56 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 753.039 ; gain = 436.117
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 754.938 ; gain = 438.027
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'D:/Jake_Gu/UT Austin/GitHub/High-Speed-Project/src/Booth_RA_Mul_ppl/Booth_RA_Mul_ppl.runs/synth_1/RA_Mul_ppl.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file RA_Mul_ppl_utilization_synth.rpt -pb RA_Mul_ppl_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.030 . Memory (MB): peak = 753.039 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Nov 11 21:32:04 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 754.938 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 12 15:31:59 2018...

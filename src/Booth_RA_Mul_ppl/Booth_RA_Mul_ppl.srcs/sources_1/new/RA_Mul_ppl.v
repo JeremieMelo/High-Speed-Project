@@ -4549,10 +4549,14 @@ endmodule
 module RA_Mul_ppl( // @[:@4143.2]
   input         clock, // @[:@4144.4]
   input         reset, // @[:@4145.4]
+  output [31:0] io_P_i,
+  //output [15:0] PPLRegs1_PP_0,
   output [31:0] io_P, // @[:@4146.4]
   input  [15:0] io_B, // @[:@4146.4]
   input  [15:0] io_A // @[:@4146.4]
+  
 );
+//assign PPLRegs1_PP_0 = PPLRegs1_io_PP_o_0;
   wire [2:0] BoothEncoder_radix4_io_eB_0; // @[RA_Mul.scala 105:21:@4163.4]
   wire [2:0] BoothEncoder_radix4_io_eB_1; // @[RA_Mul.scala 105:21:@4163.4]
   wire [2:0] BoothEncoder_radix4_io_eB_2; // @[RA_Mul.scala 105:21:@4163.4]
@@ -6768,4 +6772,5 @@ module RA_Mul_ppl( // @[:@4143.2]
   assign PPLRegs3_clock = clock; // @[:@5342.4]
   assign PPLRegs3_reset = reset; // @[:@5343.4]
   assign PPLRegs3_io_S_i = TailAdder_io_S; // @[RA_Mul.scala 723:16:@5344.4]
+  assign io_P_i = TailAdder_io_S;
 endmodule

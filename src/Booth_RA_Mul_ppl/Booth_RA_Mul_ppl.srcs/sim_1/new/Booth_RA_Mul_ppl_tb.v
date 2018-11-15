@@ -29,8 +29,10 @@ wire [31:0] result;
 reg [15:0] A;
 reg [15:0] B;
 wire[31:0] P;
+wire[31:0] P_i;
+//wire [15:0] pplregs_pp_0;
 
-always #20 clk = !clk;
+always #40 clk = !clk;
 
 initial 
 begin
@@ -38,7 +40,7 @@ begin
 	cnt = 32750;
 	i = 1;
 	rst = 1'b1;
-    #20 rst = 1'b0;
+    #50 rst = 1'b0;
 end
 
 
@@ -49,7 +51,9 @@ RA_Mul_ppl ra_ppl (
     .reset(rst),
 	.io_A(A),
 	.io_B(B),
-	.io_P(P)
+	.io_P(P),
+	.io_P_i(P_i)
+	//.PPLRegs1_PP_0(pplregs_pp_0)
 );
 
 
@@ -61,9 +65,15 @@ end
 
 reg [31:0] result1, result2, result3;
 always @(posedge clk) begin
+   if(rst) begin
+   result3 <= 32'b0;
+   result2 <= 32'b0;
+   result1 <= 32'b0;
+   end else begin
     result3 <= result2;
     result2 <= result1;
     result1 <= A*B;
+   end
 end
 assign result = result3;
 endmodule
