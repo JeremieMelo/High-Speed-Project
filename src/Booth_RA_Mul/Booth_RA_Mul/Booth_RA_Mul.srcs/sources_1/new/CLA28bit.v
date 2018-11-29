@@ -10,7 +10,7 @@ wire P03,P47,P811,P1215,P1619,P2023,P2427;
 wire G03,G47,G811,G1215,G1619,G2023,G2427;
 
 
-CLA4bit cla0 (
+CLA4bit cla0 (    //12
 	.A	(A[3:0]),
 	.B	(B[3:0]),
 	.P	(P[3:0]),
@@ -37,7 +37,7 @@ CLA4bit cla2 (
 	.G03	(G811)
 );
 
-CLA16bit cla16(
+CLA16bit cla16(//200
 	.A	(A[27:12]),
 	.B	(B[27:12]),
 	.P	(P[27:12]),
@@ -79,9 +79,9 @@ assign C[23]	= G[22] | (P[22] & C[22]);
 assign C[24]	= G2023 | (P2023 & C[20]);
 assign C[25]	= G[24] | (P[24] & C[24]);
 assign C[26]	= G[25] | (P[25] & C[25]);
-assign C[27]	= G[25] | (P[25] & C[25]);
+assign C[27]	= G[25] | (P[25] & C[25]);//27*2
 
-assign PnG	= (P & ~G);
-assign S	= ~(PnG & C) & (PnG | C);
+assign PnG	= (P & ~G);//2
+assign S	= ~(PnG & C) & (PnG | C);//4
 
 endmodule
